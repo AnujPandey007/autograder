@@ -1,0 +1,18 @@
+[
+    {
+        "input": "7 5\n",
+        "expected": "12\n"
+    },
+    {
+        "input": "0 0\n",
+        "expected": "0\n"
+    },
+    {
+        "input": "-8 -3\n",
+        "expected": "-11\n"
+    },
+    {
+        "input": "-8 3\n",
+        "expected": "-5\n"
+    }
+]
