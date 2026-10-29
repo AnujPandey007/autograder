@@ -75,7 +75,7 @@
             "analyzer": "llm_review",
             "weight": 0.1,
             "params": {
-                "model": "llama-3.3-70b-versatile",
+                "model": "llama3.2:1b",
                 "temperature": 0,
                 "seed": 42
             }

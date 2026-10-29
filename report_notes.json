@@ -1,0 +1,41 @@
+{
+  "usefulness": [
+    {
+      "use_case": "Programming labs",
+      "example": "Evaluate C submissions using the same instructor rules.",
+      "benefit": "Consistent marking with visible evidence."
+    },
+    {
+      "use_case": "Student practice",
+      "example": "Show an input that produces an incorrect answer.",
+      "benefit": "Students can reproduce and investigate failures."
+    },
+    {
+      "use_case": "Instructor review",
+      "example": "Review similar programs when comparison files exist.",
+      "benefit": "Helps focus manual review."
+    }
+  ],
+  "limitations": [
+    {
+      "limitation": "Tests cannot prove correctness",
+      "example": "A program passes supplied tests but fails an unseen input.",
+      "mitigation": "Add more verified test cases."
+    },
+    {
+      "limitation": "Complexity estimates can be wrong",
+      "example": "A simple estimator misses relationships between loops.",
+      "mitigation": "Review uncertain estimates manually."
+    },
+    {
+      "limitation": "Similarity does not prove copying",
+      "example": "Two independent short programs look almost identical.",
+      "mitigation": "Review matches before reaching a conclusion."
+    },
+    {
+      "limitation": "Execution evidence can be incomplete",
+      "example": "A sanitizer timeout leaves later tests unexecuted.",
+      "mitigation": "Investigate the timeout and rerun the checks."
+    }
+  ]
+}
