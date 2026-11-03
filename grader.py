@@ -7,6 +7,7 @@ from decimal import Decimal, ROUND_HALF_UP
 
 import pycparser
 from rules import read_rules, read_tests
+from test_generator import generate_tests
 from runtime import docker_runner
 from llm_review import generate_feedback
 from analyzers import syntax, correctness, structure, modularity, logical
@@ -55,6 +56,7 @@ def grade_file(c_file, instructor_file, test_file, peers):
     source = path.read_text(encoding="utf-8")
     rules = read_rules(instructor_file)
     tests = read_tests(test_file)
+    tests = generate_tests(source, rules, tests)
     compiler = docker_runner.compiler_info()
 
     # Parsing failure should not stop compiler and execution checks.
